@@ -1,0 +1,19 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [],
+    "desc": "Simple spoon for bringing chime to the foreground.",
+    "doc": "Simple spoon for bringing chime to the foreground.",
+    "items": [],
+    "name": "Chime",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  }
+]
