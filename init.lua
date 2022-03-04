@@ -4,6 +4,7 @@ local log = hs.logger.new('hammerspoon','debug')
 hs.ipc.cliInstall()
 hs.hotkey.bindSpec({ hyper, "r" }, hs.reload)
 hs.hotkey.bindSpec({ hyper, "l" }, hs.toggleConsole)
+hs.hotkey.bindSpec({hyper, "z"}, hs.caffeinate.lockScreen)
 
 hs.loadSpoon("MiroWindowsManager")
 
