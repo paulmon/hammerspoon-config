@@ -32,5 +32,6 @@ spoon.AppHotkeys:bindAppHotKeys({
 })
 
 hs.loadSpoon("Chime")
-spoon.Chime.hyper = hyper
-spoon.Chime:bindKey('c')
+spoon.Chime:init()
+spoon.Chime:bindFocusKey('c')
+spoon.Chime:bindToggleMuteKey('a')

@@ -11,7 +11,6 @@ obj.homepage = ""
 obj.license = "ISC - https://opensource.org/licenses/ISC"
 obj.log = hs.logger.new('Chime')
 obj.hyper = {"shift", "ctrl", "cmd", "alt"}
-obj.meta = {"ctrl", "cmd", "alt"}
 obj.appTitle = "Amazon Chime:"
 
 -- http://lua-users.org/wiki/StringRecipes
@@ -19,15 +18,14 @@ local function starts_with(str, start)
   return str:sub(1, #start) == start
 end
 
--- function obj:_isChimeWindow(window)
---   return self:_starts_with(window:title(), self.appTitle)
--- end
-
-function obj:bindKey(key)
+function obj:init()
   self.window_filter = hs.window.filter.new(function (window)
     return starts_with(window:title(), self.appTitle)
   end)
-  hs.hotkey.bindSpec({self.meta, key}, function()
+end
+
+function obj:bindToggleMuteKey(key)
+  hs.hotkey.bindSpec({self.hyper, key}, function()
     self.log.i("bind focus and toggle mute")
 
     local windows = self.window_filter:getWindows(self.appTitle)
@@ -37,6 +35,9 @@ function obj:bindKey(key)
       hs.eventtap.keyStroke({"cmd"}, 'Y')
     end
   end)
+end
+
+function obj:bindFocusKey(key)
   hs.hotkey.bindSpec({self.hyper, key}, function()
     self.log.i("bind focus only")
 
@@ -46,7 +47,6 @@ function obj:bindKey(key)
       window:focus()
     end
   end)
-  self.log.i("exit chime bindKeys")
 end
 
 return obj
