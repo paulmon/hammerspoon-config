@@ -18,10 +18,12 @@ spoon.MiroWindowsManager:bindHotkeys({
   nextscreen = {hyper, "n"}
 })
 
+-- osascript -e 'id of app "Cisco AnyConnect Secure Mobility Client"'
 hs.loadSpoon("AppHotkeys")
 spoon.AppHotkeys:bindAppHotKeys({
   b = "com.cisco.anyconnect.gui",
   e = "com.microsoft.edgemac",
+  i = "com.jetbrains.toolbox.linkapp.pcom.jetbrains.toolbox__ntelli_ltimate_2021_2_3",
   m = "com.apple.Music",
   o = "com.microsoft.Outlook",
   q = "com.quip.Desktop",
