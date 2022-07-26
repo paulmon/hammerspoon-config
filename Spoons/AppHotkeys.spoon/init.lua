@@ -8,6 +8,7 @@
 -- spoon.AppHotkeys:bindAppHotKeys({
 --   c = "com.amazon.Amazon-Chime",
 --   e = "com.microsoft.edgemac",
+--   i = "com.jetbrains.intellij",
 --   m = "com.apple.Music",
 --   o = "com.microsoft.Outlook",
 --   q = "com.quip.Desktop",
