@@ -23,6 +23,7 @@ hs.loadSpoon("AppHotkeys")
 spoon.AppHotkeys:bindAppHotKeys({
   b = "com.cisco.anyconnect.gui",
   e = "com.microsoft.edgemac",
+  f = "org.mozilla.firefox",
   i = "com.jetbrains.toolbox.linkapp.pcom.jetbrains.toolbox__ntelli_ltimate_2021_2_3",
   m = "com.apple.Music",
   o = "com.microsoft.Outlook",
