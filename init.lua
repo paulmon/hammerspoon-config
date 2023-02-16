@@ -22,9 +22,10 @@ spoon.MiroWindowsManager:bindHotkeys({
 hs.loadSpoon("AppHotkeys")
 spoon.AppHotkeys:bindAppHotKeys({
   b = "com.cisco.anyconnect.gui",
+  c = "com.google.Chrome",
   e = "com.microsoft.edgemac",
   f = "org.mozilla.firefox",
-  i = "com.jetbrains.toolbox.linkapp.pcom.jetbrains.toolbox__ntelli_ltimate_2021_2_3",
+  i = "com.jetbrains.intellij",
   m = "com.apple.Music",
   o = "com.microsoft.Outlook",
   q = "com.quip.Desktop",
@@ -32,9 +33,10 @@ spoon.AppHotkeys:bindAppHotKeys({
   t = "com.googlecode.iterm2",
   v = "com.microsoft.VSCode",
   y = "com.google.Chrome",
+  tab = "com.google.Chrome",
 })
 
 hs.loadSpoon("Chime")
 spoon.Chime:init()
-spoon.Chime:bindFocusKey('c')
+spoon.Chime:bindFocusKey('x')
 spoon.Chime:bindToggleMuteKey('a')
